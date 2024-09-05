@@ -27,7 +27,7 @@ Output: [0,1]
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        previousMap = {}#hashmap
+        prevMap = {}#hashmap
         for i, num in enumerate(nums):
             difference = target - num
             if difference in prevMap: 
